@@ -1,19 +1,19 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# The JSON format for vCon - Conversation Data Container
+# The JSON format for vCon -  Contact Center Extension
 
 This is the working area for the IETF [VCON Working Group](https://datatracker.ietf.org/group/vcon/documents/) Internet-Draft, "The JSON format for vCon - Conversation Data Container".
 
-* [Editor's Copy](https://ietf-wg-vcon.github.io/draft-ietf-vcon-vcon-container/#go.draft-ietf-vcon-vcon-container.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container)
-* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-vcon-vcon-container)
-* [Compare Editor's Copy to Working Group Draft](https://ietf-wg-vcon.github.io/draft-ietf-vcon-vcon-container/#go.draft-ietf-vcon-vcon-container.diff)
+* [Editor's Copy](https://ietf-wg-vcon.github.io/draft-ietf-vcon-cc-extension/#go.draft-ietf-vcon-cc-extension.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-vcon-cc-extension)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-vcon-cc-extension)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-wg-vcon.github.io/draft-ietf-vcon-cc-extension/#go.draft-ietf-vcon-cc-extension.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-container/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ietf-wg-vcon/draft-ietf-vcon-cc-extension/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
