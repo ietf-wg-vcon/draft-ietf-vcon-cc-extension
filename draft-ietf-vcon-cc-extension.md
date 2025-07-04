@@ -132,6 +132,8 @@ The document defines an extension for the JSON vCon schema in support of call, s
 
 ## JSON Notation
 
+TODO: remove this a reference VCON-CORE
+
 For the ease of documentation, the convention for [JSON] notation used in this document is copied from sections 1.1-1.5 of [JMAP].
 
 * Date - A string that MUST have the form of an [RFC3339] date string as defined for the Date type in section 1.4 of [JMAP].
@@ -153,7 +155,8 @@ Objects or arrays with no or null values MAY be excluded from the vCon.
 
 # vCon JSON Object
 
-
+This vCon extension adds a new extensions parameter name value token.
+The string token "CC" should be included in the extensions array of the vCon Object.
 
 ## Party Object
 
@@ -233,6 +236,15 @@ This extension to vCon adds no additional security concerns.
 # IANA Considerations
 
 ## vCon JSON Registry Additions
+
+### vCon Extensions Names Registry
+
+The following extension name is added to the vCon Extensions Names Registry.
+
+| Extension Name | Extension Description | Change Controller | Specification Document(s):
+| --- | --- | --- | --- |
+| CC | Contact Center | IESG | [](#vcon-json-object) RFC XXXX |
+
 
 ### Parties Object Parameter Names Registry
 
