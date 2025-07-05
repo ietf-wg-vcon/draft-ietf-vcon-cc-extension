@@ -259,8 +259,6 @@ The following defines the intial values for the vCon Dialog Object Parameter Nam
 | interaction_id | dialog interaction id | IESG | [](#interaction_id) RFC XXXX |
 | skill | required skill | IESG | [](#skill) RFC XXXX |
 
-FC XXXX |
-
 # Contact Center Use Cases
 
 TODO: insert draft-rosenberg-vcon-cc-usecases here
