@@ -1,8 +1,8 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# The JSON format for vCon -  Contact Center Extension
+# The JSON vCon - Contact Center Extension
 
-This is the working area for the IETF [VCON Working Group](https://datatracker.ietf.org/group/vcon/documents/) Internet-Draft, "The JSON format for vCon - Conversation Data Container".
+This is the working area for the IETF [VCON Working Group](https://datatracker.ietf.org/group/vcon/documents/) Internet-Draft, "The JSON vCon - Contact Center Extension".
 
 * [Editor's Copy](https://ietf-wg-vcon.github.io/draft-ietf-vcon-cc-extension/#go.draft-ietf-vcon-cc-extension.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-vcon-cc-extension)
