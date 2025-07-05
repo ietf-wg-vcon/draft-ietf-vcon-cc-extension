@@ -7,8 +7,8 @@
 <title>The JSON vCon - Contact Center Extension</title>
 <meta content="Daniel G Petrie" name="author">
 <meta content="
-       A vCon is the container for data and information relating to a real-time, human conversation.
-The document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format. 
+       A vCon is container for data and information relating to a human conversation.
+This document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format. 
     " name="description">
 <meta content="xml2rfc 3.29.0" name="generator">
 <meta content="conversation" name="keyword">
@@ -1067,7 +1067,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">vCon</dd>
+<dd class="workgroup">Virtualized Conversations</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
 <dd class="internet-draft">draft-ietf-vcon-cc-extension-latest</dd>
 <dt class="label-published">Published:</dt>
@@ -1090,8 +1090,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">The JSON vCon - Contact Center Extension</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">A vCon is the container for data and information relating to a real-time, human conversation.
-The document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">A vCon is container for data and information relating to a human conversation.
+This document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1099,7 +1099,7 @@ The document defines an extension for the JSON vCon schema in support of call, s
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        The latest revision of this draft can be found at <span><a href="https://ietf-wg-vcon.github.io/draft-ietf-vcon-vcon-container/draft-ietf-vcon-vcon-container.html">https://ietf-wg-vcon.github.io/draft-ietf-vcon-vcon-container/draft-ietf-vcon-vcon-container.html</a></span>.
+        The latest revision of this draft can be found at <span><a href="https://ietf-wg-vcon.github.io/draft-ietf-vcon-cc-extension/draft-ietf-vcon-cc-extension.html">https://ietf-wg-vcon.github.io/draft-ietf-vcon-cc-extension/draft-ietf-vcon-cc-extension.html</a></span>.
         Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-ietf-vcon-cc-extension/">https://datatracker.ietf.org/doc/draft-ietf-vcon-cc-extension/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 <p id="section-note.1-3">
         Discussion of this document takes place on the
@@ -1107,7 +1107,7 @@ The document defines an extension for the JSON vCon schema in support of call, s
         which is archived at <span><a href="https://mailarchive.ietf.org/arch/browse/vcon/">https://mailarchive.ietf.org/arch/browse/vcon/</a></span>.
         Subscribe at <span><a href="https://www.ietf.org/mailman/listinfo/vcon/">https://www.ietf.org/mailman/listinfo/vcon/</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
 <p id="section-note.1-4">Source for this draft and an issue tracker can be found at
-        <span><a href="https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-container">https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-container</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+        <span><a href="https://github.com/ietf-wg-vcon/draft-ietf-vcon-cc-extension">https://github.com/ietf-wg-vcon/draft-ietf-vcon-cc-extension</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1358,7 +1358,8 @@ For the ease of documentation, the convention for JSON notation used in this doc
 <p id="section-3-1">This vCon extension adds a new extensions parameter name value token.
 The string token "CC" should be included in the extensions array of the vCon Object.
 It is not required that consumers of vCons with the <strong>CC</strong> extension content support this extension.
-It does not change the simantics or remove any parameters form the core vCon schema.<a href="#section-3-1" class="pilcrow">¶</a></p>
+It does not change the semantics or remove any parameters form the core vCon schema.
+There is no need to list the CC extension name in the <strong>must_support</strong> parameter.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="party-object">
 <section id="section-3.1">
         <h3 id="name-party-object">
