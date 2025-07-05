@@ -148,7 +148,8 @@ Objects or arrays with no or null values MAY be excluded from the vCon.
 This vCon extension adds a new extensions parameter name value token.
 The string token "CC" should be included in the extensions array of the vCon Object.
 It is not required that consumers of vCons with the **CC** extension content support this extension.
-It does not change the simantics or remove any parameters form the core vCon schema.
+It does not change the semantics or remove any parameters form the core vCon schema.
+There is no need to list the CC extension name in the **must_support** parameter.
 
 ## Party Object
 
