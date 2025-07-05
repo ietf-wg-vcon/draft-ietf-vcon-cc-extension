@@ -82,8 +82,8 @@ informative:
 
 --- abstract
 
-A vCon is the container for data and information relating to a real-time, human conversation.
-The document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format.
+A vCon is container for data and information relating to a human conversation.
+This document defines an extension for the JSON vCon schema in support of call, support or contact center application of the vCon conversational data exchange format.
 
 --- middle
 
