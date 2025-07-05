@@ -132,20 +132,10 @@ The document defines an extension for the JSON vCon schema in support of call, s
 
 ## JSON Notation
 
-TODO: remove this a reference VCON-CORE
-
-For the ease of documentation, the convention for [JSON] notation used in this document is copied from sections 1.1-1.5 of [JMAP].
-
-* Date - A string that MUST have the form of an [RFC3339] date string as defined for the Date type in section 1.4 of [JMAP].
+This document uses the same JSON notation that is used in [VCON-CORE].
+For the ease of documentation, the convention for JSON notation used in this document is copied from section 2.2 of [VCON-CORE].
 
 * "String" - a JSON string type
-
-* "UnsignedInt" - a positive JSON integer as defined in section 1.3 of [JMAP].
-
-* "UnsignedFloat" - a positive JSON floating point number containing a decimal point as defined in section 6 of [JSON].
-
-* "Mediatype" - A "String" value that MUST be of the following form as defined in section 5.1 of [MIME]:
-    type "/" subtype
 
 * "A\[\]" and array of values of type A.
 
