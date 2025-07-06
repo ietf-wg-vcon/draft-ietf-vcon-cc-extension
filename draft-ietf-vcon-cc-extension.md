@@ -202,6 +202,8 @@ TODO: add enumerated values from JDR
 
 ### interaction_id {#interaction_id}
 
+TODO: Is this different from RFC7989 session ID (session_id in core)?
+
 In a contact center scenario, interactions with a party are often labeled with an identifier.
 In some case the interaction is contained in a single dialog.
 In others there may be multiple dialogs (e.g. messages or calls) that are all part of a single interaction.
