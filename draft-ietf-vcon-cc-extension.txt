@@ -4,8 +4,8 @@
 
 Virtualized Conversations                                    D. G Petrie
 Internet-Draft                                                 SIPez LLC
-Intended status: Standards Track                             5 July 2025
-Expires: 6 January 2026
+Intended status: Standards Track                             6 July 2025
+Expires: 7 January 2026
 
 
                 The JSON vCon - Contact Center Extension
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 6 January 2026.
+   This Internet-Draft will expire on 7 January 2026.
 
 Copyright Notice
 
@@ -247,6 +247,8 @@ Table of Contents
    TODO: add enumerated values from JDR
 
 3.2.3.  interaction_id
+
+   TODO: Is this different from RFC7989 session ID (session_id in core)?
 
    In a contact center scenario, interactions with a party are often
    labeled with an identifier.  In some case the interaction is
