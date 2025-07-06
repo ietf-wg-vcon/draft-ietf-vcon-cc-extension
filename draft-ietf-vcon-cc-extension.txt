@@ -315,7 +315,7 @@ Table of Contents
 
 5.1.3.  Dialog Object Parameter Names Registry
 
-   The following defines the intial values for the vCon Dialog Object
+   The following defines the initial values for the vCon Dialog Object
    Parameter Names Registry.
 
    +==================+===================+============+===============+
