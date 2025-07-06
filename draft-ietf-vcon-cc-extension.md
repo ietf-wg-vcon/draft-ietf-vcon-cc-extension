@@ -253,7 +253,7 @@ The following defines additional values for the vCon Parties Object Parameter Na
 
 ### Dialog Object Parameter Names Registry
 
-The following defines the intial values for the vCon Dialog Object Parameter Names Registry.
+The following defines the initial values for the vCon Dialog Object Parameter Names Registry.
 
 | Parameter Name | Parameter Description | Change Controller | Specification Document(s) |
 | --- | --- | --- | --- |
