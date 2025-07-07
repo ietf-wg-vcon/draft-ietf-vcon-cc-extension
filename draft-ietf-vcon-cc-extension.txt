@@ -4,8 +4,8 @@
 
 Virtualized Conversations                                    D. G Petrie
 Internet-Draft                                                 SIPez LLC
-Intended status: Standards Track                             6 July 2025
-Expires: 7 January 2026
+Intended status: Standards Track                             7 July 2025
+Expires: 8 January 2026
 
 
                 The JSON vCon - Contact Center Extension
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 January 2026.
+   This Internet-Draft will expire on 8 January 2026.
 
 Copyright Notice
 
@@ -96,6 +96,13 @@ Table of Contents
    Author's Address
 
 1.  Introduction
+
+   This document adds a number of new parameters to the Party Object and
+   the Dialog Object defined as part of the JSON vCon schema in
+   [VCON-CORE].  The vCon parameters defined in this document have been
+   determined to be need and are specific to the contact center uses of
+   vCon.  The general framework and requirements for defining an
+   extension to the JSON vCon schema are defined in [VCON-CORE].
 
 2.  Conventions and Definitions
 
