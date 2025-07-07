@@ -89,6 +89,9 @@ This document defines an extension for the JSON vCon schema in support of call, 
 
 # Introduction
 
+This document adds a number of new parameters to the Party Object and the Dialog Object defined as part of the JSON vCon schema in [VCON-CORE].
+The vCon parameters defined in this document have been determined to be need and are specific to the contact center uses of vCon.
+The general framework and requirements for defining an extension to the JSON vCon schema are defined in [VCON-CORE].
 
 # Conventions and Definitions
 
