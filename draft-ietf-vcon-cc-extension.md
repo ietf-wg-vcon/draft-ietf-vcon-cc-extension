@@ -99,39 +99,7 @@ The general framework and requirements for defining an extension to the JSON vCo
 
 ## Terminology
 
-* analysis - analysis, transformations, summary, sentiment, or translation typically of the dialog data
-
-* conversation - an exchange of communication using text, audio or video medium between at least one human and one or more bots or humans
-
-* de-identification - removal of all information that could identify a party in a conversation.  This includes PII as well as audio and video recordings.  Voice recordings might be re-vocalized with a different speaker.
-
-* dialog - the captured conversation in its original form (e.g. text, audio or video)
-
-* encrypted form - encrypted JWE document with the JWS signed vCon form contained in the ciphertext
-
-* file - a data block either included or referenced in a vCon
-
-* object - JSON object containing key and value pairs
-
-* parameter - JSON key and value pair
-
-* party - an observer or participant to the conversation, either passive or active
-
-* payload - the contents or bytes that make up a file
-
-* PII - Personal Identifiable Information
-
-* PII masked - may include voice recordings, but PII is removed from transcripts and recordings (audio and video).
-
-* vCon - container for conversational information
-
-* vCon instance - a vCon populated with data for a specific conversation
-
-* vCon instance version - a single version of an instance of a conversation, which may be modified to redact or append additional information  forming a subsequent vCon instance version
-
-* vCon syntax version - the version for the data syntax used for form a vCon
-
-* signed form - JWS signed document with the unsigned vCon form contained in the payload
+See section 2.1 of [VCON-CORE] for terminology used in this document.
 
 ## JSON Notation
 
