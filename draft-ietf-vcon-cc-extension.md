@@ -41,6 +41,7 @@ author:
  -
     fullname: Jonathan Rosenberg
     organization: Five9
+    email: jdrosen@jdrosen.net
 
 normative:
 
