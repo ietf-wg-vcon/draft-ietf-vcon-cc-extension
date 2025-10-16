@@ -44,7 +44,7 @@ normative:
 
   UUID: I-D.draft-peabody-dispatch-new-uuid-format
 
-  VCON-CORE: I-D.draft-vcon-vcon-core
+  VCON-CORE: I-D.draft-ietf-vcon-vcon-core
 
 informative:
 
