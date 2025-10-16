@@ -364,13 +364,25 @@ Table of Contents
    recordings that come from the core.  The following shows the flow of
    recordings in this use case:
 
-   {#fig-qm} ~~~ +--------+ |Customer| +--------+ ^ Real Time | Voice |
-   V Recording +--------+ +----+ Transfer +----+
-   Access |Quality | |Core+----------->| QM +----------->|Manager |
-   +----+ +----+ +--------+ ^ Real Time ^ | Voice | | | Desktop V |
-   Recording +-------+ | | Agent |-------------+ +-------+
+   +--------+
+   |Customer|
+   +--------+
+       ^ Real Time
+       | Voice
+       |
+       V    Recording                    +--------+
+     +----+ Transfer   +----+  Access    |Quality |
+     |Core+----------->| QM +----------->|Manager |
+     +----+            +----+            +--------+
+       ^ Real Time       ^
+       | Voice           |
+       |                 | Desktop
+       V                 | Recording
+   +-------+             |
+   | Agent |-------------+
+   +-------+
 
-   ~~~ Figure: QM Recording Exchanges
+                      Figure 1: QM Recording Exchanges
 
    In this flow, the customer calls into the contact center, and is
    connected to the core.  Typically this is done through the Session
@@ -568,9 +580,9 @@ Normative References
    [VCON-CORE]
               Petrie, D., "The JSON format for vCon - Conversation Data
               Container", Work in Progress, Internet-Draft, draft-ietf-
-              vcon-vcon-core-00, 8 July 2025,
+              vcon-vcon-core-01, 15 October 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-vcon-
-              vcon-core-00>.
+              vcon-core-01>.
 
 Informative References
 
