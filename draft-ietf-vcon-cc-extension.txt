@@ -4,8 +4,9 @@
 
 Virtualized Conversations                                    D. G Petrie
 Internet-Draft                                                 SIPez LLC
-Intended status: Standards Track                         16 October 2025
-Expires: 19 April 2026
+Intended status: Standards Track                            J. Rosenberg
+Expires: 19 April 2026                                             Five9
+                                                         16 October 2025
 
 
                 The JSON vCon - Contact Center Extension
@@ -100,7 +101,7 @@ Table of Contents
    References
      Normative References
      Informative References
-   Author's Address
+   Authors' Addresses
 
 1.  Introduction
 
@@ -567,9 +568,9 @@ Normative References
    [VCON-CORE]
               Petrie, D., "The JSON format for vCon - Conversation Data
               Container", Work in Progress, Internet-Draft, draft-ietf-
-              vcon-vcon-core-01, 15 October 2025,
+              vcon-vcon-core-00, 8 July 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-vcon-
-              vcon-core-01>.
+              vcon-core-00>.
 
 Informative References
 
@@ -603,8 +604,12 @@ Informative References
               <https://github.com/vcon-dev/vcon/blob/main/docs/vCons_%20
               an%20Open%20Standard%20for%20Conversation%20Data.pdf>.
 
-Author's Address
+Authors' Addresses
 
    Daniel G Petrie
    SIPez LLC
    Email: dan.ietf@sipez.com
+
+
+   Jonathan Rosenberg
+   Five9
