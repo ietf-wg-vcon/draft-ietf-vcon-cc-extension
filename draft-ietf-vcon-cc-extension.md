@@ -265,7 +265,6 @@ It is also common for QM applications to use speech recognition technology to tr
 
 A part of the agent role involves usage of corporate applications, such as ordering, billing, shipping, to handle the customer inquiry. To determine whether agents are using these tools correctly, it is common in the contact center for agents to have desktop recording applications installed. These record the screen content as a video file. Typically, the vendor of the QM software provides the desktop screen recording and backend applications which receive and store the recording. These are then combined with the audio, email, or chat recordings that come from the core. The following shows the flow of recordings in this use case:
 
-{#fig-qm}
 ~~~
 +--------+
 |Customer|
@@ -286,8 +285,7 @@ A part of the agent role involves usage of corporate applications, such as order
 +-------+
 
 ~~~
-Figure: QM Recording Exchanges
-
+{: #fig-qm title="QM Recording Exchanges"}
 
 In this flow, the customer calls into the contact center, and is connected to the core. Typically this is done through the Session Initial Protocol (SIP) [RFC3261] and the Real-Time Transport Protocol (RTP) [RFC3550]. The call is delivered to the agent, also typically using SIP and RTP. The core will record the call, and then at the end of the call, the recording is transferred to the QM system. During the call, the agent desktop is recorded, and this recording is transferred to the QM system. At a later time, the Quality Manager can log into the QM application, and access the recording, inclusive of the audio, the transcript and the desktop recording.
 
