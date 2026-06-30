@@ -5,8 +5,8 @@
 Virtualized Conversations                                    D. G Petrie
 Internet-Draft                                                 SIPez LLC
 Intended status: Standards Track                            J. Rosenberg
-Expires: 19 April 2026                                             Five9
-                                                         16 October 2025
+Expires: 1 January 2027                                            Five9
+                                                            30 June 2026
 
 
                 The JSON vCon - Contact Center Extension
@@ -51,11 +51,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 April 2026.
+   This Internet-Draft will expire on 1 January 2027.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -86,7 +86,7 @@ Table of Contents
    5.  IANA Considerations
      5.1.  vCon JSON Registry Additions
        5.1.1.  vCon Extensions Names Registry
-       5.1.2.  Parties Object Parameter Names Registry
+       5.1.2.  Party Object Parameter Names Registry
        5.1.3.  Dialog Object Parameter Names Registry
    6.  Contact Center Use Cases
      6.1.  Types of Applications
@@ -143,11 +143,11 @@ Table of Contents
 3.  vCon JSON Object
 
    This vCon extension adds a new extensions parameter name value token.
-   The string token "CC" should be included in the extensions array of
+   The string token "CC" SHOULD be included in the extensions array of
    the vCon Object.  It is not required that consumers of vCons with the
    *CC* extension content support this extension.  It does not change
    the semantics or remove any parameters form the core vCon schema.
-   There is no need to list the CC extension name in the *must_support*
+   There is no need to list the CC extension name in the *critical*
    parameter.
 
 3.1.  Party Object
@@ -162,7 +162,11 @@ Table of Contents
    specialist.  In conferences there are roles: host, cohost, speaker,
    panelist, participant and other roles.  The role parameter provides
    the ability to label the role that the part played in the
-   conversation.
+   conversation.  This role parameter is distinct from the Party Object
+   type parameter defined in [VCON-CORE].  The type parameter indicates
+   the nature of the party, such as whether it is a human, bot or other
+   entity, whereas role indicates the function the party served in the
+   contact center, for example a subject matter expert or supervisor.
 
    *  role: "String" (optional)
 
@@ -189,7 +193,7 @@ Table of Contents
    contact_list may be used as a label for foreign key reference to the
    contact list that this party was on.
 
-   *  contact_list "String" (optional)
+   *  contact_list: "String" (optional)
 
 3.2.  Dialog Object
 
@@ -210,13 +214,11 @@ Table of Contents
 
 3.2.2.  interaction_type
 
-   *  interaction_type "String" (optional)
+   *  interaction_type: "String" (optional)
 
    TODO: add enumerated values from JDR
 
 3.2.3.  interaction_id
-
-   TODO: Is this different from RFC7989 session ID (session_id in core)?
 
    In a contact center scenario, interactions with a party are often
    labeled with an identifier.  In some case the interaction is
@@ -226,7 +228,7 @@ Table of Contents
    conversation or vCon.  The interaction parameter is used as a label
    or foreign key in reference to the interaction ID.
 
-   *  interaction_id "String" (optional)
+   *  interaction_id: "String" (optional)
 
 3.2.4.  skill
 
@@ -237,7 +239,7 @@ Table of Contents
    parameter is provided.  The string values of the skill parameter are
    contact center specific.
 
-   *  skill "String" (optional)
+   *  skill: "String" (optional)
 
 4.  Security Considerations
 
@@ -255,7 +257,7 @@ Table of Contents
 
        +================+=============+============+===============+
        | Extension Name | Extension   | Change     | Specification |
-       |                | Description | Controller | Document(s):  |
+       |                | Description | Controller | Document(s)   |
        +================+=============+============+===============+
        | CC             | Contact     | IESG       | Section 3 RFC |
        |                | Center      |            | XXXX          |
@@ -263,9 +265,9 @@ Table of Contents
 
                                   Table 1
 
-5.1.2.  Parties Object Parameter Names Registry
+5.1.2.  Party Object Parameter Names Registry
 
-   The following defines additional values for the vCon Parties Object
+   The following defines additional values for the vCon Party Object
    Parameter Names Registry.
 
    +==============+======================+============+===============+
@@ -283,8 +285,8 @@ Table of Contents
 
 5.1.3.  Dialog Object Parameter Names Registry
 
-   The following defines the initial values for the vCon Dialog Object
-   Parameter Names Registry.
+   The following defines the additional values for the vCon Dialog
+   Object Parameter Names Registry.
 
    +==================+===================+============+===============+
    | Parameter Name   | Parameter         | Change     | Specification |
@@ -544,14 +546,9 @@ Acknowledgments
       input to the vCon container requirements in the form of I-D:
       draft-rosenberg-vcon-cc-usecases.
 
-   *  Thank you to Rohan Mahy for his help in exploring the CDDL schema
-      and CBOR format for vCon.
-
    *  The examples in this document were generated using the command
       line interface (CLI) from the py-vcon [PY-VCON] python open source
       project.
-
-   *  Thank you to Steve Lasker for formatting and spelling edits.
 
 References
 
@@ -580,9 +577,9 @@ Normative References
    [VCON-CORE]
               Petrie, D., "The JSON format for vCon - Conversation Data
               Container", Work in Progress, Internet-Draft, draft-ietf-
-              vcon-vcon-core-01, 15 October 2025,
+              vcon-vcon-core-02, 21 January 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-vcon-
-              vcon-core-01>.
+              vcon-core-02>.
 
 Informative References
 
@@ -597,7 +594,7 @@ Informative References
    [RFC3261]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
               A., Peterson, J., Sparks, R., Handley, M., and E.
               Schooler, "SIP: Session Initiation Protocol", RFC 3261,
-              DOI 10.17487/RFC3261, June 2002,
+              DOI 10.17487/RFC3261, July 2002,
               <https://www.rfc-editor.org/rfc/rfc3261>.
 
    [RFC3550]  Schulzrinne, H., Casner, S., Frederick, R., and V.
@@ -613,8 +610,8 @@ Informative References
    [vCon-white-paper]
               Howe, T., Petrie, D., Lieberman, M., and A. Quayle, "vCon:
               an Open Standard for Conversation Data", n.d.,
-              <https://github.com/vcon-dev/vcon/blob/main/docs/vCons_%20
-              an%20Open%20Standard%20for%20Conversation%20Data.pdf>.
+              <https://github.com/vcon-dev/vcon/blob/main/docs/
+              vCons_%20an%20Open%20Standard%20for%20Conversation%20Data.pdf>.
 
 Authors' Addresses
 
