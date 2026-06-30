@@ -205,6 +205,34 @@ The string values of the skill parameter are contact center specific.
 
 * skill: "String" (optional)
 
+# Compatibility Considerations
+
+This extension is Compatible as defined in [VCON-CORE].
+It only adds new optional parameters to the Party Object and the Dialog Object.
+It does not change the meaning, structure or permitted values of any parameter defined in [VCON-CORE], and it does not redefine or deprecate any existing parameter.
+The parameters added by this extension are role and contact_list in the Party Object, and campaign, interaction_type, interaction_id and skill in the Dialog Object.
+Each of these parameters is an independent optional label, and none of them changes how any other parameter is interpreted.
+An implementation that does not recognize these parameters can therefore continue to process the vCon correctly by ignoring them.
+Because this extension is Compatible under all conditions, the CC extension name appears in the extensions parameter and is not listed in the critical parameter.
+
+# Incompatibility Considerations
+
+This extension introduces no incompatibilities.
+All parameters defined in this document are new, optional and additive.
+None of them changes the semantics, structure or permitted values of any parameter defined in [VCON-CORE].
+No processing operation, such as transcription or redaction, needs to understand these parameters in order to process the remainder of the vCon correctly.
+Because no incompatibility is introduced, the CC extension name is not required to appear in the critical parameter.
+
+# Privacy and Integrity Considerations
+
+The parameters defined in this extension are short labels that describe the role of a party or the handling of a dialog within a contact center.
+They do not carry conversational media, transcripts or analysis.
+The role, interaction_type, interaction_id and skill parameters are operational labels and are not expected to contain party-identifying data or PII.
+The contact_list and campaign parameters are normally internal identifiers, though depending on an organization's naming conventions a value could be indirectly revealing.
+A redactor that removes or de-identifies party information can treat contact_list and campaign as candidates for review, while recognizing that in most deployments they carry no PII.
+
+This extension does not add any url or content_hash parameters, and therefore introduces no new externally referenced content.
+The integrity mechanisms defined in [VCON-CORE], such as content_hash for externally referenced files, are unchanged by this extension.
 
 # Security Considerations
 
