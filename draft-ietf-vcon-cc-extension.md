@@ -92,7 +92,6 @@ informative:
   RFC7866: RFC7866
 
 
-
 --- abstract
 
 A vCon is container for data and information relating to a human conversation.
@@ -130,10 +129,10 @@ Objects or arrays with no or null values MAY be excluded from the vCon.
 # vCon JSON Object
 
 This vCon extension adds a new extensions parameter name value token.
-The string token "CC" should be included in the extensions array of the vCon Object.
+The string token "CC" SHOULD be included in the extensions array of the vCon Object.
 It is not required that consumers of vCons with the **CC** extension content support this extension.
 It does not change the semantics or remove any parameters form the core vCon schema.
-There is no need to list the CC extension name in the **must_support** parameter.
+There is no need to list the CC extension name in the **critical** parameter.
 
 ## Party Object
 
@@ -145,6 +144,8 @@ The role that the participant played in the conversation.
 In a call center there are roles: such as: agents, customer, supervisor and specialist.
 In conferences there are roles: host, cohost, speaker, panelist, participant and other roles.
 The role parameter provides the ability to label the role that the part played in the conversation.
+This role parameter is distinct from the Party Object type parameter defined in [VCON-CORE].
+The type parameter indicates the nature of the party, such as whether it is a human, bot or other entity, whereas role indicates the function the party served in the contact center, for example a subject matter expert or supervisor.
 
 * role: "String" (optional)
 
@@ -164,7 +165,7 @@ In a contact center scenario, the conversation with this party may be part of a 
 It is sometimes useful to reference the list from which this party was included.
 The contact_list may be used as a label for foreign key reference to the contact list that this party was on.
 
-* contact_list "String" (optional)
+* contact_list: "String" (optional)
 
 ## Dialog Object
 
@@ -180,13 +181,11 @@ In some case it may be appropriate to attached the campaign data as an Attachmen
 
 ### interaction_type {#interaction_type}
 
-* interaction_type "String" (optional)
+* interaction_type: "String" (optional)
 
 TODO: add enumerated values from JDR
 
 ### interaction_id {#interaction_id}
-
-TODO: Is this different from RFC7989 session ID (session_id in core)?
 
 In a contact center scenario, interactions with a party are often labeled with an identifier.
 In some case the interaction is contained in a single dialog.
@@ -194,7 +193,7 @@ In others there may be multiple dialogs (e.g. messages or calls) that are all pa
 There may also be many interactions for a single conversation or vCon.
 The interaction parameter is used as a label or foreign key in reference to the interaction ID.
 
-* interaction_id "String" (optional)
+* interaction_id: "String" (optional)
 
 ### skill
 
@@ -204,7 +203,7 @@ The agent or automata which services the dialog are required to have a specific 
 To facilitate this in a vCon dialog, the skill parameter is provided.
 The string values of the skill parameter are contact center specific.
 
-* skill "String" (optional)
+* skill: "String" (optional)
 
 
 # Security Considerations
@@ -220,14 +219,14 @@ This extension to vCon adds no additional security concerns.
 
 The following extension name is added to the vCon Extensions Names Registry.
 
-| Extension Name | Extension Description | Change Controller | Specification Document(s):
+| Extension Name | Extension Description | Change Controller | Specification Document(s) |
 | --- | --- | --- | --- |
 | CC | Contact Center | IESG | [](#vcon-json-object) RFC XXXX |
 
 
-### Parties Object Parameter Names Registry
+### Party Object Parameter Names Registry
 
-The following defines additional values for the vCon Parties Object Parameter Names Registry.
+The following defines additional values for the vCon Party Object Parameter Names Registry.
 
 | Parameter Name | Parameter Description | Change Controller | Specification Document(s) |
 | --- | --- | --- | --- |
@@ -237,7 +236,7 @@ The following defines additional values for the vCon Parties Object Parameter Na
 
 ### Dialog Object Parameter Names Registry
 
-The following defines the initial values for the vCon Dialog Object Parameter Names Registry.
+The following defines the additional values for the vCon Dialog Object Parameter Names Registry.
 
 | Parameter Name | Parameter Description | Change Controller | Specification Document(s) |
 | --- | --- | --- | --- |
@@ -340,7 +339,5 @@ TODO
 
 * Thank you to Thomas McCarthy-Howe for inventing the concept of a vCon and the many discussions that we had while this concept was developed into reality.
 * Thank you to Jonathan Rosenberg and Andrew Siciliano for their input to the vCon container requirements in the form of I-D: draft-rosenberg-vcon-cc-usecases.
-* Thank you to Rohan Mahy for his help in exploring the CDDL schema and CBOR format for vCon.
 * The examples in this document were generated using the command line interface (CLI) from the py-vcon [PY-VCON] python open source project.
-* Thank you to Steve Lasker for formatting and spelling edits.
 
