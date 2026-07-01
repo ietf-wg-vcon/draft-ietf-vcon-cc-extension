@@ -1056,11 +1056,11 @@ svg {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">vCon CC Extension</td>
-<td class="right">June 2026</td>
+<td class="right">July 2026</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Petrie &amp; Rosenberg</td>
-<td class="center">Expires 1 January 2027</td>
+<td class="center">Expires 2 January 2027</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1073,12 +1073,12 @@ svg {
 <dd class="internet-draft">draft-ietf-vcon-cc-extension-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-06-30" class="published">30 June 2026</time>
+<time datetime="2026-07-01" class="published">1 July 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2027-01-01">1 January 2027</time></dd>
+<dd class="expires"><time datetime="2027-01-02">2 January 2027</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1133,7 +1133,7 @@ This document defines an extension for the JSON vCon schema in support of call, 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 1 January 2027.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 2 January 2027.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1272,21 +1272,24 @@ This document defines an extension for the JSON vCon schema in support of call, 
             <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-example-vcons" class="internal xref">Example vCons</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-json-schema-for-the-cc-exte" class="internal xref">JSON Schema for the cc Extension</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
-            <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref"></a><a href="#name-references" class="internal xref">References</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12.2.1">
-                <p id="section-toc.1-1.12.2.1.1"><a href="#section-12.1" class="auto internal xref"></a><a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12.2.2">
-                <p id="section-toc.1-1.12.2.2.1"><a href="#section-12.2" class="auto internal xref"></a><a href="#name-informative-references" class="internal xref">Informative References</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13">
+            <p id="section-toc.1-1.13.1"><a href="#section-13" class="auto internal xref"></a><a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13.2.1">
+                <p id="section-toc.1-1.13.2.1.1"><a href="#section-13.1" class="auto internal xref"></a><a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13.2.2">
+                <p id="section-toc.1-1.13.2.2.1"><a href="#section-13.2" class="auto internal xref"></a><a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13">
-            <p id="section-toc.1-1.13.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.14">
+            <p id="section-toc.1-1.14.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1772,31 +1775,128 @@ This extension to vCon adds no additional security concerns.<a href="#section-7-
 <p id="section-10-1">TODO<a href="#section-10-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="acknowledgments">
+<div id="json-schema-for-the-cc-extension">
 <section id="section-11">
+      <h2 id="name-json-schema-for-the-cc-exte">
+<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-json-schema-for-the-cc-exte" class="section-name selfRef">JSON Schema for the cc Extension</a>
+      </h2>
+<p id="section-11-1">This appendix provides a JSON schema for the parameters defined by the cc extension.
+The text in the preceding sections of this document defines the normative definition of these parameters.
+If the JSON schema provided below differs from that in the text of the preceding sections, the text is the definitive definition and the JSON schema below is to be considered incorrect.<a href="#section-11-1" class="pilcrow">¶</a></p>
+<p id="section-11-2">This schema supplements, and does not replace, the core vCon JSON schema.
+It constrains only the parameters added by this extension and relies on the core vCon schema to validate all other parameters.
+Because this extension is Compatible with the core vCon schema, a vCon that uses these parameters also validates against the unmodified core vCon schema.
+To fully validate a vCon that uses this extension, apply both the core vCon schema and this schema to the vCon.<a href="#section-11-2" class="pilcrow">¶</a></p>
+<p id="section-11-3">The JSON schema definition below has been formatted with line breaks to print nicely on the page.
+The unformatted version of the JSON schema can be downloaded from:
+https://raw.githubusercontent.com/ietf-wg-vcon/draft-ietf-vcon-cc-extension/refs/heads/main/cc_json_schema.json<a href="#section-11-3" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-11-4">
+<pre>
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ietf.org/vcon/schemas/cc-extension.json",
+  "title": "vCon Contact Center (cc) Extension",
+  "description": "Supplemental JSON schema for the parameters def
+    ined by the vCon Contact Center (cc) extension, RFCXXXX. This
+     schema is applied in addition to the core vCon schema; it co
+    nstrains only the parameters added by this extension and leav
+    es all other parameters to the core schema. The text of this
+    document is normative; this schema is informational.",
+  "type": "object",
+  "properties": {
+    "parties": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PartyCcExtension"
+      }
+    },
+    "dialog": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DialogCcExtension"
+      }
+    }
+  },
+  "definitions": {
+    "PartyCcExtension": {
+      "type": "object",
+      "description": "Contact center parameters added to the core
+         Party Object",
+      "properties": {
+        "role": {
+          "type": "string",
+          "description": "Role played by the party in the contact
+             center interaction"
+        },
+        "contact_list": {
+          "type": "string",
+          "description": "Identifier of the contact or dialing li
+            st from which the party was contacted"
+        }
+      }
+    },
+    "DialogCcExtension": {
+      "type": "object",
+      "description": "Contact center parameters added to the core
+         Dialog Object",
+      "properties": {
+        "interaction_type": {
+          "type": "string",
+          "description": "Type of contact center interaction repr
+            esented by the dialog"
+        },
+        "interaction_id": {
+          "type": "string",
+          "description": "Identifier correlating the dialog with
+            the originating contact center system"
+        },
+        "campaign": {
+          "type": "string",
+          "description": "Identifier of the campaign associated w
+            ith the dialog"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Set of skills associated with the dialo
+            g"
+        }
+      }
+    }
+  }
+}
+
+</pre><a href="#section-11-4" class="pilcrow">¶</a>
+</div>
+</section>
+</div>
+<div id="acknowledgments">
+<section id="section-12">
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
 <ul class="normal">
-<li class="normal" id="section-11-1.1">
-          <p id="section-11-1.1.1">Thank you to Thomas McCarthy-Howe for inventing the concept of a vCon and the many discussions that we had while this concept was developed into reality.<a href="#section-11-1.1.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-12-1.1">
+          <p id="section-12-1.1.1">Thank you to Thomas McCarthy-Howe for inventing the concept of a vCon and the many discussions that we had while this concept was developed into reality.<a href="#section-12-1.1.1" class="pilcrow">¶</a></p>
 </li>
-        <li class="normal" id="section-11-1.2">
-          <p id="section-11-1.2.1">Thank you to Jonathan Rosenberg and Andrew Siciliano for their input to the vCon container requirements in the form of I-D: draft-rosenberg-vcon-cc-usecases.<a href="#section-11-1.2.1" class="pilcrow">¶</a></p>
+        <li class="normal" id="section-12-1.2">
+          <p id="section-12-1.2.1">Thank you to Jonathan Rosenberg and Andrew Siciliano for their input to the vCon container requirements in the form of I-D: draft-rosenberg-vcon-cc-usecases.<a href="#section-12-1.2.1" class="pilcrow">¶</a></p>
 </li>
-        <li class="normal" id="section-11-1.3">
-          <p id="section-11-1.3.1">The examples in this document were generated using the command line interface (CLI) from the py-vcon <span>[<a href="#PY-VCON" class="cite xref">PY-VCON</a>]</span> python open source project.<a href="#section-11-1.3.1" class="pilcrow">¶</a></p>
+        <li class="normal" id="section-12-1.3">
+          <p id="section-12-1.3.1">The examples in this document were generated using the command line interface (CLI) from the py-vcon <span>[<a href="#PY-VCON" class="cite xref">PY-VCON</a>]</span> python open source project.<a href="#section-12-1.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
 </div>
 <div id="sec-combined-references">
-<section id="section-12">
+<section id="section-13">
       <h2 id="name-references">
 <a href="#name-references" class="section-name selfRef">References</a>
       </h2>
 <div id="sec-normative-references">
-<section id="section-12.1">
+<section id="section-13.1">
         <h3 id="name-normative-references">
 <a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
@@ -1825,7 +1925,7 @@ This extension to vCon adds no additional security concerns.<a href="#section-7-
 </section>
 </div>
 <div id="sec-informative-references">
-<section id="section-12.2">
+<section id="section-13.2">
         <h3 id="name-informative-references">
 <a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
