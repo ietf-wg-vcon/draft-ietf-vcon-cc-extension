@@ -362,6 +362,25 @@ As one might imagine, there are a variety of deployment topologies for these app
 
 TODO
 
+# JSON Schema for the cc Extension
+
+This appendix provides a JSON schema for the parameters defined by the cc extension.
+The text in the preceding sections of this document defines the normative definition of these parameters.
+If the JSON schema provided below differs from that in the text of the preceding sections, the text is the definitive definition and the JSON schema below is to be considered incorrect.
+
+This schema supplements, and does not replace, the core vCon JSON schema.
+It constrains only the parameters added by this extension and relies on the core vCon schema to validate all other parameters.
+Because this extension is Compatible with the core vCon schema, a vCon that uses these parameters also validates against the unmodified core vCon schema.
+To fully validate a vCon that uses this extension, apply both the core vCon schema and this schema to the vCon.
+
+The JSON schema definition below has been formatted with line breaks to print nicely on the page.
+The unformatted version of the JSON schema can be downloaded from:
+https://raw.githubusercontent.com/ietf-wg-vcon/draft-ietf-vcon-cc-extension/refs/heads/main/cc_json_schema.json
+
+~~~
+{::include cc_json_schema.pp}
+~~~
+
 # Acknowledgments
 {:numbered="false"}
 
