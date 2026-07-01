@@ -673,13 +673,13 @@ Table of Contents
              "description": "Identifier of the campaign associated w
                ith the dialog"
            },
-           "skills": {
+           "skill": {
              "type": "array",
              "items": {
                "type": "string"
              },
-             "description": "Set of skills associated with the dialo
-               g"
+             "description": "Set of skill associated with the dialog
+               "
            }
          }
        }
